@@ -230,6 +230,7 @@ h1
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .project-title
@@ -445,7 +446,60 @@ label
 
 
 /************* RESPONSIVE *************/
-                                                         
+     
+@media screen and (max-width: 825px)
+{
+    .social
+    {
+        background-color: #fff;
+        margin-right: 0;
+        top: 0;
+        border-bottom-left-radius: 4px;
+        padding: 13px;
+    }
+
+    .icon 
+    {
+        color: #000;
+        font-size: 18px;
+    }
+
+    .header
+    {
+        position: relative;
+    }
+
+    .section-introduction
+    {
+        height: 100vh;
+        padding-top: 0;
+        display: grid;
+        place-items: center;
+    }
+
+    .section-introduction h2 
+    {
+        position: relative;
+        font-size: 42px;
+        width: 79%;
+    }
+
+    .wave
+    {
+        display: none;
+    }
+
+    .mes-projets
+    {
+        flex-direction: column;
+    }
+
+    .project-menu-container
+    {
+        padding-top: 40px;
+    }
+}
+
 @media screen and (max-width: 600px)
 {
     h1
@@ -481,6 +535,33 @@ label
     {
         font-size: 19px;
     }
+
+    .section-introduction h2 
+    {
+        width: 80%;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .project-title 
+    {
+        font-size: 40px;
+    }
+
+    .project-menu-container {
+        padding-top: 30px;
+    }
+
+    .menu-text
+    {
+        font-size: 10px;
+        padding: 8px 22px;
+    }
+
+    .portfolio 
+    {
+        margin: 40px auto auto;
+    }
 }
 
 
@@ -505,5 +586,32 @@ label
     .home-nav a 
     {
         font-size: 9px;
+    }
+
+    .section-introduction h2 
+    {
+        width: 73%;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .project-title
+    {
+        font-size: 30px;
+    }
+
+    .menu-text 
+    {
+        font-size: 8px;
+        padding: 6px 20px;
+    }
+}
+
+@media screen and (max-width: 320px)
+{
+    .section-introduction h2 
+    {
+        width: 68%;
+        font-size: 20px;
     }
 }
