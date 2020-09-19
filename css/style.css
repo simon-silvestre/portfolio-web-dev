@@ -543,6 +543,16 @@ label
         font-size: 30px;
     }
 
+    .projet-container 
+    {
+        width: 90%;
+    }
+
+    .projet
+    {
+        min-height: 250px;
+    }
+
     .project-title 
     {
         font-size: 40px;
@@ -613,5 +623,10 @@ label
     {
         width: 68%;
         font-size: 20px;
+    }
+
+    .projet 
+    {
+        min-width: 225px;
     }
 }
