@@ -25,7 +25,7 @@
             <div class="home-nav">
                 <a href="#">A propos</a>
                 <b>/</b>
-                <a href="#">projets</a>
+                <a href="#projets">projets</a>
                 <b>/</b>
                 <a href="#">contact</a>
             </div>
@@ -39,24 +39,22 @@
     </div>
 
     <div class="section-projets">
-        
         <div class="wave"></div>
-
-        <div class="mes-projets">
+        <div class="mes-projets" id="projets">
             <h2 class="project-title">Mes Projets</h2>
             <div class="project-menu-container">
-                <label class="menu-item">
-                    <input type="radio" name="Portfolio" checked id="AllWorks_Button">
+                <label class="menu-item" data-target="All">
+                    <input class="project-menu" type="radio" name="Portfolio" checked>
                     <span class="menu-text">All</span>
                 </label>
     
-                <label class="menu-item">
-                    <input type="radio" name="Portfolio" id="SiteWeb_Button">
+                <label class="menu-item" data-target="backend">
+                    <input class="project-menu" type="radio" name="Portfolio">
                     <span class="menu-text">BACKEND</span>
                 </label>
     
-                <label class="menu-item">
-                    <input type="radio" name="Portfolio">
+                <label class="menu-item" data-target="frontend">
+                    <input class="project-menu" type="radio" name="Portfolio">
                     <span class="menu-text">FRONTEND</span>
                 </label>
             </div>
@@ -64,7 +62,17 @@
             <div class="portfolio">
                 <div class="projet-container">
 
-                    <div class="projet">
+                    <div class="projet" data-id="frontend">
+                        <div class="contenu-projet">
+                            <img src="assets/webagency-miniature.webp" alt="site de la webagency">
+                            <B>Web Agency</b>
+                        </div>
+                        <div class="overlay">
+                            <a class="voir-plus" href="">Voir plus</a>
+                        </div>
+                    </div>
+
+                    <div class="projet" data-id="frontend">
                         <div class="contenu-projet">
                             <img src="assets/Velocation-miniature.webp" alt="site de location de vélos">
                             <B>Vélocation</b>
@@ -73,8 +81,8 @@
                             <a class="voir-plus" href="">Voir plus</a>
                         </div>
                     </div>
-    
-                    <div class="projet">
+
+                    <div class="projet" data-id="backend">
                         <div class="contenu-projet">
                             <img src="assets/ridefrance-miniature.webp" alt="site de cartographie de skatepark">
                             <B>RideFrance</b>
@@ -84,7 +92,7 @@
                         </div>
                     </div>
     
-                    <div class="projet">
+                    <div class="projet" data-id="backend">
                         <div class="contenu-projet">
                             <img src="assets/ireki-miniature.webp" alt="site de tourisme d'ireki">
                             <B>Ireki Tourisme</b>
@@ -94,15 +102,6 @@
                         </div>
                     </div>
 
-                    <div class="projet">
-                        <div class="contenu-projet">
-                            <img src="assets/webagency-miniature.webp" alt="site de la webagency">
-                            <B>Web Agency</b>
-                        </div>
-                        <div class="overlay">
-                            <a class="voir-plus" href="">Voir plus</a>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -117,5 +116,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
     <script src="js/ScrollReveal.js"></script>
     <script src="js/ScrollTrigger.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>

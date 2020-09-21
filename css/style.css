@@ -19,6 +19,11 @@
     color: #252525;
 }
 
+html
+{
+    scroll-behavior: smooth;
+}
+
 body
 {
     background-color: #fff;
@@ -255,6 +260,7 @@ label
     padding-top: 10px;
 	text-align: center;
     display: block;
+    display: ruby;
     margin-left: auto;
     margin-right: auto;
 }
@@ -286,17 +292,6 @@ label
 	border-bottom: 3px solid #0460b1;
 	color: #fff;
 }
-
-.project-menu-container .fa-caret-down
-{
-	position: absolute;
-	top: 19px;
-	left: 43%;
-	font-size: 28px;
-	color: transparent;
-}
-
-
 
 /************* PORTFOLIO *************/
 
