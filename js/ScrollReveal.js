@@ -16,10 +16,19 @@ sr.reveal('#titleLogo, .sous-titre, .home-nav, .project-title, .section-introduc
     duration: 2000
 });
 
-sr.reveal('.projet', {
+
+if (window.matchMedia("(max-width: 826px)").matches) {
+sr.reveal('.projet-container', {
     duration: 2000,
     delay: 50,
-    interval: 150
 });
+}
 
+if (window.matchMedia("(min-width: 826px)").matches) {
+    sr.reveal('.projet', {
+        duration: 2000,
+        delay: 50,
+        interval: 150
+    });
+    }
 
