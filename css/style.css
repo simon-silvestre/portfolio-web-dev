@@ -61,7 +61,7 @@ h1
 
 .header
 {
-    z-index: 501;
+    z-index: 1500;
     background: radial-gradient(#252525,#181818);
     transition: transform 0.8s cubic-bezier(0.22, 0.15, 0, 1);
     min-height: 100vh;
@@ -179,7 +179,6 @@ h1
     height: 200vh;
     background-color: #047be3;
     transition: transform 0.8s cubic-bezier(0.22, 0.15, 0, 1);
-    padding-top: 35vh;
     width: 100%;
     justify-content: center;
     display: flex;
@@ -194,7 +193,8 @@ h1
     font-family: Gilroy ExtraBold,sans-serif;
     font-size: 52px;
     line-height: 1.25;
-    width: 60%;
+    max-width: 786px;
+    padding-top: 35vh;
 }
 
 .introduction-white-text 
@@ -205,15 +205,15 @@ h1
 
 /*********** PROJETS ***********/
 
-.section-projets
+.section-contenu
 {
-    z-index: 500;
-    min-height: 100vh;
     width: 100%;
-    position: absolute;
+    position: relative;
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
 }
-
 
 .wave 
 {
@@ -228,7 +228,7 @@ h1
 
 .mes-projets
 {
-    margin-bottom: 1.5rem;
+    margin-bottom: 3rem;
     padding-top: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -236,9 +236,10 @@ h1
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    box-shadow: 0px -100px 20px 0px #057be3;
 }
 
-.project-title
+.title-section
 {
     font-family: Gilroy ExtraBold,sans-serif;
     font-size: 50px;
@@ -438,7 +439,115 @@ label
     color: #252525;
 }
 
+/************* DIVIDER *************/
 
+.divider
+{
+    width: 100%;
+    top: 100px;
+    position: relative;
+    transform: rotateX(180deg);
+}
+
+svg 
+{
+    background: #fff;
+}
+
+.séparateur img
+{
+    height: 35vh;
+    width: 100%;
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    z-index: 1;
+}
+
+/************* A PROPOS *************/
+
+#a-propos 
+{
+    width: 100%;
+    min-height: 250px;
+    background: #252525;
+  
+}
+
+.a-propos-container
+{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 100px;
+}
+
+#a-propos h2 
+{
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.a-propos-content
+{
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.id-card
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-right: 90px;
+    background: rgba(0,0,0,.15);
+    border-radius: 6px;
+    padding: 40px;
+}
+
+.id-card p
+{
+    color: hsla(0,0%,100%,.7);
+    font-size: 14px;
+    font-family: Poppins,sans-serif;
+    margin: 2px 35px 2px 35px;
+}
+
+.id-card p b 
+{
+    color: #fff;
+    font-size: 12px;
+}
+
+.id-card div 
+{
+    width: 175px;
+    height: 175px;
+    white-space: nowrap;
+    background: url(/assets/profile.png);
+    border-radius: 50%;
+    background-size: cover;
+    border: 4px solid #047be3;
+    box-shadow: 0 0 0 6px #047be334;
+    margin-bottom: 18px;
+    display: block;
+    align-self: center;
+}
+
+.a-propos-content p:only-of-type
+{
+    text-indent: 1.5em;
+    display: block;
+    width: 60%;
+    position: relative;
+    color: hsla(0,0%,100%,.8);
+    font-size: 17.5px;
+    line-height: 24px;
+}
 
 /************* RESPONSIVE *************/
      
@@ -467,7 +576,6 @@ label
     .section-introduction
     {
         height: 100vh;
-        padding-top: 0;
         display: grid;
         place-items: center;
     }
@@ -477,6 +585,7 @@ label
         position: relative;
         font-size: 42px;
         width: 79%;
+        padding-top: 0;
     }
 
     .wave
@@ -487,6 +596,7 @@ label
     .mes-projets
     {
         flex-direction: column;
+        margin-bottom: 6rem;
     }
 
     .project-menu-container
@@ -548,7 +658,7 @@ label
         min-height: 250px;
     }
 
-    .project-title 
+    .title-section
     {
         font-size: 40px;
     }
@@ -600,7 +710,7 @@ label
         font-size: 25px;
     }
 
-    .project-title
+    .title-section
     {
         font-size: 30px;
     }
