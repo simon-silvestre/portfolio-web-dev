@@ -4,7 +4,7 @@ if (window.matchMedia("(min-width: 826px)").matches) {
     gsap.to(".header", {
         scrollTrigger: {
             trigger: ".section-introduction",
-            start: "center 100",
+            start: "center 500",
             markers: true,
             toggleActions: "restart none none reverse"
         },
