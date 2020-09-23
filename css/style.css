@@ -544,7 +544,7 @@ svg
     display: block;
     width: 60%;
     position: relative;
-    color: hsl(211deg 32% 52%);
+    color: hsl(211deg 21% 51%);
     font-size: 17.5px;
     line-height: 24px;
 }
@@ -571,6 +571,7 @@ svg
     .header
     {
         position: relative;
+        transform: translate(0px, 0px)!important;
     }
 
     .section-introduction
