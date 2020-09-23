@@ -150,7 +150,7 @@ h1
     top: 19px;
     right: 0;
     margin-right: 20px;
-    z-index: 999;
+    z-index: 5000;
 }
 
 .icon
@@ -506,7 +506,7 @@ svg
     margin-right: 90px;
     background: rgba(0,0,0,.15);
     border-radius: 6px;
-    padding: 40px;
+    padding: 25px;
 }
 
 .id-card p
@@ -514,7 +514,7 @@ svg
     color: hsla(0,0%,100%,.7);
     font-size: 14px;
     font-family: Poppins,sans-serif;
-    margin: 2px 35px 2px 35px;
+    margin: 2px 20px 2px 20px;
 }
 
 .id-card p b 
@@ -525,8 +525,8 @@ svg
 
 .id-card div 
 {
-    width: 175px;
-    height: 175px;
+    width: 150px;
+    height: 150px;
     white-space: nowrap;
     background: url(/assets/profile.png);
     border-radius: 50%;
@@ -544,7 +544,7 @@ svg
     display: block;
     width: 60%;
     position: relative;
-    color: hsla(0,0%,100%,.8);
+    color: hsl(211deg 32% 52%);
     font-size: 17.5px;
     line-height: 24px;
 }
@@ -603,6 +603,40 @@ svg
     {
         padding-top: 40px;
     }
+
+    .a-propos-container 
+    {
+        padding-top: 50px;
+    }
+
+    .a-propos-content
+    {
+        flex-direction: column;
+        margin-top: -15px!important;
+        text-align: center;
+    }
+
+    .id-card 
+    {
+        margin-top: 35px!important;
+        margin-bottom: 50px!important;
+        margin-right: 0!important;
+    }
+
+    .id-card div 
+    {
+        margin: 32px auto;
+        background-size: cover!important;
+        width: 170px!important;
+        height: 170px!important;
+    }
+
+    .a-propos-content p:only-of-type 
+    {
+        margin: auto!important;
+        text-align: left;
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 600px)
@@ -615,6 +649,11 @@ svg
     #titleLogo
     {
         width: 235px;
+    }
+
+    .a-propos-container .title-section
+    {
+        font-size: 45px;
     }
 }
 
@@ -663,6 +702,11 @@ svg
         font-size: 40px;
     }
 
+    .a-propos-container .title-section
+    {
+        font-size: 37px;
+    }
+
     .project-menu-container {
         padding-top: 30px;
     }
@@ -677,11 +721,27 @@ svg
     {
         margin: 40px auto auto;
     }
+    
+    .a-propos-content p:only-of-type 
+    {
+        text-align: center;
+        font-size: 15px;
+    }
 }
 
 
 @media screen and (max-width: 375px)
 {
+    .social 
+    {
+        padding: 10px;
+    }
+
+    .icon 
+    {
+        font-size: 16px;
+    }
+
     h1
     {
         font-size: 35px;
@@ -720,18 +780,66 @@ svg
         font-size: 8px;
         padding: 6px 20px;
     }
+
+    .a-propos-container .title-section
+    {
+        font-size: 30px;
+    }
 }
 
 @media screen and (max-width: 320px)
 {
+    h1 
+    {
+        font-size: 30px;
+    }
+
+    #titleLogo 
+    {
+        width: 160px;
+    }
+
     .section-introduction h2 
     {
         width: 68%;
         font-size: 20px;
     }
 
+    .home-nav a 
+    {
+        font-size: 8px;
+    }
+
+    .title p 
+    {
+        font-size: 12px;
+    }
+
     .projet 
     {
         min-width: 225px;
+    }
+
+    .a-propos-container .title-section
+    {
+        font-size: 25px;
+    }
+
+    .id-card div 
+    {
+        margin: 32px auto;
+        background-size: cover!important;
+        width: 170px!important;
+        height: 170px!important;
+    }
+
+    .id-card p 
+    {
+        font-size: 11px;
+        margin: 5px 20px 5px 20px;
+    }
+
+    .a-propos-content p:only-of-type {
+        font-size: 13px;
     }
 }
