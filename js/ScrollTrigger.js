@@ -5,7 +5,6 @@ if (window.matchMedia("(min-width: 826px)").matches) {
         scrollTrigger: {
             trigger: ".section-introduction",
             start: "center 500",
-            markers: true,
             toggleActions: "restart none none reverse"
         },
         x: '100vw',
