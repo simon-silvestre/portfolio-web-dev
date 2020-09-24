@@ -570,21 +570,10 @@ svg
     display: none;
     align-items: center;
     justify-content: center;
-    transform: scale(.6);
-    opacity: 0;
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform .375s cubic-bezier(.165,.84,.44,1),opacity .375s ease-in-out,border-radius .375s ease-in-out;
+    overflow-y: auto;
 }
 
-.project-item.enter {
-    border-radius: 0;
-    opacity: 1;
-    transform: scale(1);
-    transition: transform .375s cubic-bezier(1,0,0,1),opacity .375s ease-in-out,border-radius .375s ease-in-out!important;
-    overflow-y: auto;
-    display: flex;
-}
+
 
 .project-container
 {
