@@ -18,6 +18,48 @@ const items = document.querySelector('.projet-container').children;
         })
     }
     
+    document.querySelector('.voir-project-1').addEventListener("click", function(){
+        document.querySelector('#project-1').classList.add('enter');
+        document.querySelector('body').style.overflow = "hidden";
+    });
+
+    document.querySelector('#project-1-close').addEventListener("click", function(){
+        document.querySelector('#project-1').classList.remove('enter');
+        document.querySelector('body').style.overflow = "unset";
+    });
+
+
+    document.querySelector('.voir-project-2').addEventListener("click", function(){
+        document.querySelector('#project-2').classList.add('enter');
+        document.querySelector('body').style.overflow = "hidden";
+    });
+
+    document.querySelector('#project-2-close').addEventListener("click", function(){
+        document.querySelector('#project-2').classList.remove('enter');
+        document.querySelector('body').style.overflow = "unset";
+    });
+
+
+    document.querySelector('.voir-project-3').addEventListener("click", function(){
+        document.querySelector('#project-3').classList.add('enter');
+        document.querySelector('body').style.overflow = "hidden";
+    });
+
+    document.querySelector('#project-3-close').addEventListener("click", function(){
+        document.querySelector('#project-3').classList.remove('enter');
+        document.querySelector('body').style.overflow = "unset";
+    });
+
+
+    document.querySelector('.voir-project-4').addEventListener("click", function(){
+        document.querySelector('#project-4').classList.add('enter');
+        document.querySelector('body').style.overflow = "hidden";
+    });
+
+    document.querySelector('#project-4-close').addEventListener("click", function(){
+        document.querySelector('#project-4').classList.remove('enter');
+        document.querySelector('body').style.overflow = "unset";
+    });
 
 
 

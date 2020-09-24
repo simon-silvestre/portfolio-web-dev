@@ -16,7 +16,6 @@ sr.reveal('#titleLogo, .sous-titre, .home-nav, .project-title, .section-introduc
     duration: 2000
 });
 
-
 if (window.matchMedia("(max-width: 826px)").matches) {
 sr.reveal('.projet-container', {
     duration: 2000,
