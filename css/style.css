@@ -779,11 +779,6 @@ svg
         width: 100%;
     }
 
-    .infos-container
-    {
-        justify-content: left;
-    }
-
     .info-column
     {
         margin-left: 0;
@@ -993,5 +988,15 @@ svg
 
     .a-propos-content p:only-of-type {
         font-size: 13px;
+    }
+
+    .infos-container 
+    {
+        justify-content: left;
+    }
+
+    .info-column 
+    {
+        margin-right: 5px;
     }
 }
