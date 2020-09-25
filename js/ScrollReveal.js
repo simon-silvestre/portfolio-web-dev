@@ -29,5 +29,5 @@ if (window.matchMedia("(min-width: 826px)").matches) {
         delay: 50,
         interval: 150
     });
-    }
+}
 
