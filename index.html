@@ -8,6 +8,7 @@
     <link rel="icon" href="assets/LogoSimon.webp">
     <link rel="stylesheet" href="css/style.css">
     <link href="fontawesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,900|Material+Icons">
 </head>
 <body>
 
@@ -153,7 +154,7 @@
                 <b>/</b>
                 <a href="#a-propos">à propos</a>
                 <b>/</b>
-                <a href="#">contact</a>
+                <a href="#contact">contact</a>
             </div>
         </div>
     </div>
@@ -292,20 +293,24 @@
         <div id="contact">
             <h2 class="title-section">contact</h2>
             <div class="contact-container">
-                <form class="contact-form">
+                <form class="contact-form" method="post" action="https://script.google.com/macros/s/AKfycbyNAGiC9CmHpoPtsPwvSad452ITsYekQYYVadmlPQ/exec">
                     <div class="input">
                         <label>NOM / SOCIETE:</label>
-                        <input type="text" name="nom" placeholder="Entrer votre nom ici">
+                        <input type="text" name="name" placeholder="Entrer votre nom ici">
                     </div>
                     <div class="input">
                         <label>E-MAIL:</label>
-                        <input type="email" name="email" placeholder="Entrer votre email ici">
+                        <input type="email" name="email" required placeholder="Entrer votre email ici">
                     </div>
                     <div class="input">
                         <label>MESSAGE:</label>
                         <textarea name="message" placeholder="Entrer votre message ici"></textarea>
                     </div>
                     <button type="submit">Envoyer</button>
+
+                    <div class="thankyou_message">
+                        <p>Thanks for contacting us! We will get back to you soon!</p>
+                    </div>
                 </form>
             </div>
         </div>
@@ -320,5 +325,6 @@
     <script src="js/ScrollReveal.js"></script>
     <script src="js/ScrollTrigger.js"></script>
     <script src="js/app.js"></script>
+    <script data-cfasync="false" type="text/javascript" src="js/contact.js"></script>
 </body>
 </html>

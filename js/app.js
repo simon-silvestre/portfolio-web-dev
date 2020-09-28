@@ -60,6 +60,5 @@ const items = document.querySelector('.projet-container').children;
         document.querySelector('#project-4').style.display = 'none';
         document.querySelector('body').style.overflow = "unset";
     });
-
-
+    
 

@@ -1,12 +1,5 @@
 @font-face 
 {
-    font-family: "Poppins";
-    src: url("/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
-    font-display: swap;
-}
-
-@font-face 
-{
     font-family: "Gilroy";
     src: url("/fonts/Gilroy/Gilroy-ExtraBold.otf.ttf") format("opentype");
     font-display: swap;
@@ -799,6 +792,20 @@ button:hover
     color: #252525;
 }
 
+.thankyou_message
+{
+    display: none;
+    padding: 4px 10px;
+    border: 2px solid #252525;
+    margin-top: 20px;
+    border-radius: 25px;
+}
+
+.thankyou_message p 
+{
+    font-size: 14px;
+    text-align: center;
+}
 
 /************* RESPONSIVE *************/
      
@@ -954,6 +961,11 @@ button:hover
     {
         width: 95%;
     }
+
+    .thankyou_message p 
+    {
+        font-size: 12px;
+    }
 }
 
 @media screen and (max-width: 450px)
@@ -1099,6 +1111,11 @@ button:hover
     {
         font-size: 30px;
     }
+
+    .thankyou_message p 
+    {
+        font-size: 10px;
+    }
 }
 
 @media screen and (max-width: 320px)
@@ -1169,5 +1186,10 @@ button:hover
 
     .competences-container i {
         margin: 20px 40px;
+    }
+
+    .thankyou_message p 
+    {
+        font-size: 8px;
     }
 }
