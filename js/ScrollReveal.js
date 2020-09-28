@@ -12,7 +12,7 @@ sr.reveal('.social, .project-menu-container', {
     duration: 1000
 });
 
-sr.reveal('#titleLogo, .sous-titre, .home-nav, .project-title, .section-introduction h2', {
+sr.reveal('#titleLogo, .sous-titre, .home-nav, .project-title', {
     duration: 2000
 });
 
