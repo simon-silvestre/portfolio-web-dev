@@ -734,6 +734,11 @@ label
     padding-bottom: 115px;
 }
 
+#contact .title-section 
+{
+    color: #252525;
+}
+
 .contact-container
 {
     width: 100%;
