@@ -22,6 +22,9 @@
     let projet2 = document.querySelector('#project-2');
     let projet3 = document.querySelector('#project-3');
     let projet4 = document.querySelector('#project-4');
+    let projet5 = document.querySelector('#project-5');
+    let projet6 = document.querySelector('#project-6');
+    let projet7 = document.querySelector('#project-7');
     let body    = document.querySelector('body');
     
     document.querySelector('.voir-project-1').addEventListener("click", function(){
@@ -54,6 +57,30 @@
 
     document.querySelector('#project-4-close').addEventListener("click", function(){
         fermerProjet(projet4);
+    });
+
+    document.querySelector('.voir-project-5').addEventListener("click", function(){
+        afficherProjet(projet5);
+    });
+
+    document.querySelector('#project-5-close').addEventListener("click", function(){
+        fermerProjet(projet5);
+    });
+
+    document.querySelector('.voir-project-6').addEventListener("click", function(){
+        afficherProjet(projet6);
+    });
+
+    document.querySelector('#project-6-close').addEventListener("click", function(){
+        fermerProjet(projet6);
+    });
+
+    document.querySelector('.voir-project-7').addEventListener("click", function(){
+        afficherProjet(projet7);
+    });
+
+    document.querySelector('#project-7-close').addEventListener("click", function(){
+        fermerProjet(projet7);
     });
     
     function afficherProjet(projet) 
