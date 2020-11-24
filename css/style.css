@@ -724,7 +724,6 @@ label
     flex-direction: column;
     justify-content: center;
     position: relative;
-    overflow: hidden;
 }
 
 .competences h2
@@ -744,6 +743,7 @@ label
 .competences-container div:nth-child(n)
 {
     display: flex;
+    align-items: center;
 }
 
 .competences-container div div:nth-child(n)
@@ -1152,6 +1152,10 @@ footer a:hover
     {
         text-align: center;
         font-size: 15px;
+        width: 85%;
+    }
+    .competences-container i {
+        font-size: 50px;
     }
 
     .contact-form 
